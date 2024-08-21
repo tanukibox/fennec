@@ -2,7 +2,7 @@ package dev.javierparada.fennec.contexts.kernel.identities.domain.entities
 
 import dev.javierparada.fennec.contexts.shared.errors.domain.InvalidValueError
 
-data class IdentityName(
+data class IdentityRole(
     private val value: String,
 ) {
 
