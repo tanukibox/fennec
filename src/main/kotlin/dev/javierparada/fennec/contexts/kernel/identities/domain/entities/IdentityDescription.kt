@@ -8,7 +8,7 @@ data class IdentityDescription(
 
     init {
         if (value != null && value.isBlank()) {
-            throw InvalidValueError("Identity name cannot be empty or null")
+            throw InvalidValueError("Identity description cannot be empty")
         }
     }
 
