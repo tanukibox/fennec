@@ -1,4 +1,4 @@
-package dev.javierparada.fennec.contexts.shared.cqrs.domain
+package dev.javierparada.fennec.contexts.shared.cqrs.domain.command
 
 interface CommandBus {
 
