@@ -4,6 +4,6 @@ interface DomainEventSubscriber {
 
     fun on(event: DomainEvent)
 
-    fun getSubscriptions() : List<String>
+    fun getSubscriptions() : Set<String>
 
 }
