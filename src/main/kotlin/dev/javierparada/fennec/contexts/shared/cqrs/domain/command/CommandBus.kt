@@ -4,6 +4,6 @@ interface CommandBus {
 
     fun dispatch(command: Command)
 
-    fun subscribe(command: CommandHandler)
+    fun subscribe(handler: CommandHandler)
 
 }
