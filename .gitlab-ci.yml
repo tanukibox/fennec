@@ -1,6 +1,7 @@
 stages:
   - test
   - build
+  - security
 
 variables:
   RUST_BACKTRACE: "1"
@@ -16,3 +17,12 @@ build:
   image: rust:1.80
   script:
    - cargo build --release
+
+security:
+  stage: security
+  image: rust:1.80
+  before_script:
+    - cargo install cargo-audit || echo "cargo-audit already installed"
+  script:
+    - cargo audit
+  allow_failure: true
