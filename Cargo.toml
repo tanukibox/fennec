@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "apps/fennec_api",
+    "tests/libs/kernel"
+]
