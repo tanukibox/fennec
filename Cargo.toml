@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "apps/fennec_api",
+    "apps/fennec",
     "tests/libs/kernel"
 ]
